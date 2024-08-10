@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #0761c2;
+    --color-secundary: #5DDFE6;
+    --color-font-primary: #040404;
+    --color-font-secundary: #ffffff;
+
+    --font-primary: "Lusitana", serif;
+}
+
+html,body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-primary);
+    box-sizing: border-box;
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border-bottom: solid 2px transparent;
+    border-image: linear-gradient(0.25turn, var(--color-primary), var(--color-secundary), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+    background-image: linear-gradient(90deg, var(--color-secundary),var(--color-primary));
+    
+}
+.h1-logo{
+    font-family: "Lora", serif;
+    font-size: 80px;
+    text-align: center;
+    width: 20%;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    
+    align-items: center; 
+}
+nav ul{
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    
+    
+}
+nav ul li,nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    padding: 10px;
+    color: var(--color-font-primary);
+}
+nav ul li i{
+    padding-right: 5px;
+}
+
+/* section 01 */
+main{
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+
+}
+
+.capaPrincipal{
+    width: 100%;
+    min-height: 90vh;
+    text-align: center;
+    align-content: center;
+}
+.capaPrincipal h1{
+    font-size: 8vw;
+}
+.capaPrincipal p {
+    font-size: 3vw;
+}
