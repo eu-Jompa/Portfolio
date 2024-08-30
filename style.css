@@ -4,83 +4,158 @@
     box-sizing: border-box;
 }
 :root{
-    --color-primary: #0761c2;
+    --azul-escuro: #032E5C;
+    --azul: #0761c2;
     --color-secundary: #5DDFE6;
     --color-font-primary: #040404;
-    --color-font-secundary: #ffffff;
+    --branco: #ffffff;
 
     --font-primary: "Lusitana", serif;
 }
 
 html,body{
     display: flex;
-    flex-direction: column;
+    
     width: 100vw;
-    height: 100vh;
+    height: auto;
     font-family: var(--font-primary);
     box-sizing: border-box;
+    
     
 }
 header{
-    width: 100%;
     display: flex;
-    text-align: center;
-    border-bottom: solid 2px transparent;
-    border-image: linear-gradient(0.25turn, var(--color-primary), var(--color-secundary), rgba(56,2,155,0));
-    border-image-slice: 1;
-    width:100%;
-    background-image: linear-gradient(90deg, var(--color-secundary),var(--color-primary));
+    flex-direction: column;
+    width: 70px;
+    height: 100vh;
+    background-color: var(--azul);
+    
+    border-right: solid 2px #003cff;
+
     
 }
-.h1-logo{
-    font-family: "Lora", serif;
-    font-size: 80px;
-    text-align: center;
-    width: 20%;
-}
-nav{
-    width: 100vw;
-    display: flex;
-    
-    align-items: center; 
-}
-nav ul{
-    width: 90%;
-    display: flex;
-    justify-content: right;
-    
+header .fa-bars{
+    margin-top: 50px;
+    font-size: 24px;
+    color: var(--branco);
+    text-align: left;
+    margin-left: 10px;
     
 }
-nav ul li,nav ul li a{
-    text-decoration: none;
+header nav{
+    height: 100%;
+}
+header nav .menu{
+    height: 100%;
+    align-content: center;
     list-style-type: none;
-    font-size: 18px;
-    font-family: var(--font-primary);
-    font-weight: 700;
-    padding: 10px;
-    color: var(--color-font-primary);
+    color: var(--branco);
 }
-nav ul li i{
-    padding-right: 5px;
-}
-
-/* section 01 */
-main{
-    width: 100vw;
-    height: auto;
-    box-sizing: border-box;
-
-}
-
-.capaPrincipal{
+header nav .menu .item-menu a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 20px;
+    display: flex;
     width: 100%;
-    min-height: 90vh;
+    align-items: center;
+
+    
+
+}
+header nav .menu .item-menu{
+    min-width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: none;
+    
+}
+header nav .menu .item-menu  a:hover{
+    background-color: var(--branco);
+    color: var(--azul);
+    transition: 0.9s;
+
+    
+}
+
+header nav .menu .item-menu .icon{
+    width: 10%;
+    padding: 10px;
+}
+
+
+header nav .text-link{
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    max-height: 100%;
+    height: 100%;
+    margin-left: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.open-menu{
+    display: flex;
+}
+.expande-menu{
+    width: 300px;
+}
+header nav .menu-text li
+header nav ul a{
+    margin: 20px;
+    font-size: 24px;
+    color: var(--branco);
+
+}
+/* hero */
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+main .capa-principal{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, var(--color-secundary
+    )10%, var(--azul-escuro)100%);
+    color: var(--branco);
+    
+}
+.hero{
     text-align: center;
     align-content: center;
+    width: 100%;
+    margin-left: 50px;
+    
 }
-.capaPrincipal h1{
-    font-size: 8vw;
+.hero h1{
+    font-size: 64px;
 }
-.capaPrincipal p {
-    font-size: 3vw;
+.hero p{
+    font-size: 32px;
+    margin-top: 10px;
+
+}
+main .capa-principal .icon {
+    
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    font-size: 30px;
+    margin-right: px;
+    
+    
+}
+main .capa-principal .icon i{
+    width: 10px;
+    margin: 10PX 0PX;
 }
